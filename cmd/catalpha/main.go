@@ -13,7 +13,7 @@ import (
 
 var (
 	token string
-	name  = "catalpha(カタルファちゃん)"
+	name  = "catalpha"
 )
 
 func main() {
