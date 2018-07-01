@@ -6,6 +6,7 @@ import (
 	"os"
 	"os/signal"
 	"strings"
+	"syscall"
 
 	"github.com/aimof/catalpha"
 	"github.com/bwmarrin/discordgo"
@@ -33,7 +34,7 @@ func main() {
 	}
 
 	ch := make(chan os.Signal, 1)
-	signal.Notify(ch)
+	signal.Notify(ch, syscall.SIGHUP, syscall.SIGINT, syscall.SIGKILL, syscall.SIGTERM)
 	_ = <-ch
 	err = session.Close()
 	if err != nil {
