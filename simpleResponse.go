@@ -42,6 +42,6 @@ var responses = []response{
 	{"笑", "楽しいにゃん！"},
 	{"好き", ":heart_decoration:"},
 	{"かわいい", "通報するにゃ！"},
-	{"猫", "にゃーんheart_eyes_cat"},
+	{"猫", "にゃーん:heart_eyes_cat:"},
 	{"ガチャ", ":money_with_wings:"},
 }
